@@ -82,17 +82,8 @@ function App() {
               <h1>{res.title}</h1>
               <sub>{res.subTitle}</sub>
             </div>
-            {option5cols ? (
-              <span className="reversed">
-                <div className="center-card">
-                  <p>{res.content}</p>
-                </div>
-                <div className="picture-container">
-                  <img src={res.img} alt="landscape" />
-                </div>
-              </span>
-            ) : option3cols ? (
-              <span className="inverted">
+            {option5cols || option3cols ? (
+              <span className={option3cols ? "inverted" : "reversed"}>
                 <div className="center-card">
                   <p>{res.content}</p>
                 </div>
