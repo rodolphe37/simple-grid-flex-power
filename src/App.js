@@ -62,8 +62,6 @@ function App() {
             ? " card-container card-container-option3 fade-in-bck"
             : option5cols
             ? "card-container card-container-option4 fade-in-bck"
-            : optionrows
-            ? "card-container card-container-4rows fade-in-bck"
             : "card-container fade-in-bck"
         }
       >
